@@ -1,5 +1,5 @@
 
-const CACHE_NAME = 'pfisica-cache-v6';
+const CACHE_NAME = 'pquimica-cache-v6';
 const ASSETS = [
   './',
   './index.html',
