@@ -1,5 +1,5 @@
 
-const STATE_KEY = 'fisica_avance_pwa_v6_1';
+const STATE_KEY = 'quimica_avance';
 let materias = [];
 
 async function boot(){
@@ -49,7 +49,7 @@ function setupExportImport(){
       const state = loadState();
       const payload = {version:1, exportedAt:new Date().toISOString(), appKey:STATE_KEY, totalMaterias:materias.length, state};
       const blob = new Blob([JSON.stringify(payload, null, 2)], {type:'application/json'});
-      const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'progreso-profesorado-fisica.json';
+      const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'progreso-profesorado-quimica.json';
       document.body.appendChild(a); a.click(); URL.revokeObjectURL(a.href); a.remove();
     };
   }
