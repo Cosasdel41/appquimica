@@ -331,7 +331,7 @@
           16,
           17,
           5,
-          8,
+          8
         ],
         "requiresAcreditar": []
       }
@@ -524,7 +524,6 @@
           }
         ],
         "requiresAcreditar": []
-          30
       }
     },
     {
@@ -607,7 +606,7 @@
               26
             ]
           }
-        ],  
+        ],
         "requiresAcreditar": [
           23,
           24,

@@ -94,3 +94,7 @@ dialog{border:none;border-radius:18px;padding:0}
 }
 /* resaltado al saltar desde buscador */
 .pulse{box-shadow:0 0 0 3px rgba(36,73,110,.25)}
+
+
+/* Alertas simples (para errores de carga) */
+.alert{margin:10px 12px;padding:10px 12px;border-radius:12px;background:#fff7cc;border:1px solid #f0d76d;color:#624a00;font-weight:600}
