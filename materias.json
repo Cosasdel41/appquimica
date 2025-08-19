@@ -93,7 +93,7 @@
       "anio": "1ro",
       "nombre": "Práctica Docente I",
       "regimen": "Anual",
-      "formato": "Taller y Terreno",
+      "formato": "Taller",
       "prerrequisitos": {
         "requiresCursada": [],
         "requiresAcreditar": []
@@ -297,7 +297,7 @@
       "anio": "3ro",
       "nombre": "Didáctica de la Química",
       "regimen": "Anual",
-      "formato": "Taller",
+      "formato": "Asignatura",
       "prerrequisitos": {
         "requiresCursada": [
           14,
@@ -310,7 +310,7 @@
       "id": 25,
       "anio": "3ro",
       "nombre": "Química del carbono",
-      "regimen": "Cuatrimestral",
+      "regimen": "Anual",
       "formato": "Asignatura",
       "prerrequisitos": {
         "requiresCursada": [
@@ -354,8 +354,8 @@
       "id": 28,
       "anio": "3ro",
       "nombre": "Actividades Experimentales de C y T Escolar II",
-      "regimen": "Anual",
-      "formato": "Asignatura",
+      "regimen": "Cuatrimestral",
+      "formato": "Taller",
       "prerrequisitos": {
         "requiresCursada": [
           14,
@@ -368,8 +368,8 @@
       "id": 29,
       "anio": "3ro",
       "nombre": "Química, Ambiente y Sociedad",
-      "regimen": "Anual",
-      "formato": "Asignatura",
+      "regimen": "Cuatrimestral",
+      "formato": "Semninario",
       "prerrequisitos": {
         "requiresCursada": [
           16,
@@ -409,7 +409,7 @@
       "anio": "4to",
       "nombre": "Reflexión filosófico-política de la práctica docente",
       "regimen": "Anual",
-      "formato": "Asignatura",
+      "formato": "Taller",
       "prerrequisitos": {
         "requiresCursada": [
           22
@@ -423,7 +423,7 @@
       "id": 32,
       "anio": "4to",
       "nombre": "Derechos, interculturalidad y ciudadanía",
-      "regimen": "Cuatrimestral",
+      "regimen": "Seminario",
       "formato": "Taller",
       "prerrequisitos": {
         "requiresCursada": [
@@ -448,7 +448,7 @@
       "anio": "4to",
       "nombre": "Química biológica y Biología Molecular",
       "regimen": "Anual",
-      "formato": "Ateneo",
+      "formato": "Asignatura",
       "prerrequisitos": {
         "requiresCursada": [
           7,
@@ -512,7 +512,7 @@
       "anio": "4to",
       "nombre": "Didáctica de la química 2",
       "regimen": "Anual",
-      "formato": "Taller",
+      "formato": "Ateneo",
       "prerrequisitos": {
         "requiresCursada": [
           24,
@@ -531,7 +531,7 @@
       "anio": "4to",
       "nombre": "Historia y epistemología de la química",
       "regimen": "Anual",
-      "formato": "Asignatura",
+      "formato": "Semestral",
       "prerrequisitos": {
         "requiresCursada": [
           15,
@@ -565,7 +565,7 @@
       "anio": "4to",
       "nombre": "EOI",
       "regimen": "Cuatrimestral",
-      "formato": "Taller",
+      "formato": "Seminarios",
       "prerrequisitos": {
         "requiresCursada": [],
         "requiresAcreditar": []
@@ -618,8 +618,8 @@
       "id": 43,
       "anio": "-",
       "nombre": "Unidad Curricular Optativa",
-      "regimen": "-",
-      "formato": "-",
+      "regimen": "Anual",
+      "formato": "Taller",
       "prerrequisitos": {
         "requiresCursada": [
           1,
