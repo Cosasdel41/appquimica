@@ -1,7 +1,7 @@
 {
-  "name": "Profesorado de Física",
-  "short_name": "Prof. Física",
-  "description": "Seguimiento de materias y correlatividades del profesorado de Física.",
+  "name": "Profesorado de Química",
+  "short_name": "Prof. Química",
+  "description": "Seguimiento de materias y correlatividades del profesorado de Química.",
   "start_url": "./?source=pwa",
   "scope": "./",
   "display": "standalone",
