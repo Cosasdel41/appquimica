@@ -196,7 +196,7 @@
     {
       "id": 17,
       "anio": "2do",
-      "nombre": "Actividades Experimentales de CyT escolar",
+      "nombre": "Actividades Experimentales de CyT escolar 1",
       "regimen": "Cuatrimestral",
       "formato": "Taller",
       "prerrequisitos": {
@@ -249,7 +249,7 @@
         "requiresCursada": [],
         "requiresAcreditar": [
           2,
-          5,
+          6,
           9
         ]
       }
@@ -295,14 +295,13 @@
     {
       "id": 24,
       "anio": "3ro",
-      "nombre": "Didáctica de la Física",
+      "nombre": "Didáctica de la Química",
       "regimen": "Anual",
       "formato": "Taller",
       "prerrequisitos": {
         "requiresCursada": [
-          5,
           14,
-          17
+          16
         ],
         "requiresAcreditar": []
       }
@@ -310,13 +309,13 @@
     {
       "id": 25,
       "anio": "3ro",
-      "nombre": "Astronomía",
+      "nombre": "Química del carbono",
       "regimen": "Cuatrimestral",
       "formato": "Asignatura",
       "prerrequisitos": {
         "requiresCursada": [
-          15,
-          19
+          16,
+          17
         ],
         "requiresAcreditar": []
       }
@@ -324,13 +323,15 @@
     {
       "id": 26,
       "anio": "3ro",
-      "nombre": "Ondas y óptica",
+      "nombre": "Fisicoquímica 1",
       "regimen": "Anual",
       "formato": "Asignatura",
       "prerrequisitos": {
         "requiresCursada": [
-          15,
-          19
+          16,
+          17,
+          5,
+          8,
         ],
         "requiresAcreditar": []
       }
@@ -338,13 +339,13 @@
     {
       "id": 27,
       "anio": "3ro",
-      "nombre": "Termodinámica",
+      "nombre": "Química inorgánica",
       "regimen": "Anual",
       "formato": "Asignatura",
       "prerrequisitos": {
         "requiresCursada": [
-          15,
-          19
+          16,
+          17
         ],
         "requiresAcreditar": []
       }
@@ -352,13 +353,13 @@
     {
       "id": 28,
       "anio": "3ro",
-      "nombre": "Electromagnetismo",
+      "nombre": "Actividades Experimentales de C y T Escolar II",
       "regimen": "Anual",
       "formato": "Asignatura",
       "prerrequisitos": {
         "requiresCursada": [
-          15,
-          19
+          14,
+          17
         ],
         "requiresAcreditar": []
       }
@@ -366,12 +367,13 @@
     {
       "id": 29,
       "anio": "3ro",
-      "nombre": "Matemática asociada a la Física",
+      "nombre": "Química, Ambiente y Sociedad",
       "regimen": "Anual",
       "formato": "Asignatura",
       "prerrequisitos": {
         "requiresCursada": [
-          19
+          16,
+          18
         ],
         "requiresAcreditar": []
       }
@@ -393,7 +395,7 @@
           7,
           8,
           9,
-          15
+          16
         ],
         "requiresAcreditar": [
           10,
@@ -444,30 +446,30 @@
     {
       "id": 34,
       "anio": "4to",
-      "nombre": "Enseñanza de la Física y sus problemas",
+      "nombre": "Química biológica y Biología Molecular",
       "regimen": "Anual",
       "formato": "Ateneo",
       "prerrequisitos": {
         "requiresCursada": [
-          24
+          7,
+          17,
+          25,
+          26
         ],
-        "requiresAcreditar": [
-          30
-        ]
+        "requiresAcreditar": []
       }
     },
     {
       "id": 35,
       "anio": "4to",
-      "nombre": "Historia y epistemología de la Física",
+      "nombre": "Química analítica",
       "regimen": "Anual",
       "formato": "Asignatura",
       "prerrequisitos": {
         "requiresCursada": [
           17,
-          18,
-          25,
-          28
+          27,
+          26
         ],
         "requiresAcreditar": []
       }
@@ -475,14 +477,15 @@
     {
       "id": 36,
       "anio": "4to",
-      "nombre": "Física Cuántica, Atómica y Nuclear",
+      "nombre": "Química e industrias",
       "regimen": "Anual",
       "formato": "Asignatura",
       "prerrequisitos": {
         "requiresCursada": [
-          16,
-          26,
-          28
+          17,
+          15,
+          27,
+          26
         ],
         "requiresAcreditar": []
       }
@@ -490,14 +493,16 @@
     {
       "id": 37,
       "anio": "4to",
-      "nombre": "Relatividad, Astrofísica y Cosmología",
+      "nombre": "Fisicoquímica 2",
       "regimen": "Anual",
       "formato": "Asignatura",
       "prerrequisitos": {
         "requiresCursada": [
+          17,
           15,
-          25,
-          29
+          27,
+          19,
+          26
         ],
         "requiresAcreditar": []
       }
@@ -505,29 +510,39 @@
     {
       "id": 38,
       "anio": "4to",
-      "nombre": "Física, Tecnología y Ambiente",
+      "nombre": "Didáctica de la química 2",
       "regimen": "Anual",
       "formato": "Taller",
       "prerrequisitos": {
         "requiresCursada": [
-          15,
-          27,
-          28
+          24,
+          {
+            "anyOf": [
+              25,
+              27
+            ]
+          }
         ],
         "requiresAcreditar": []
+          30
       }
     },
     {
       "id": 39,
       "anio": "4to",
-      "nombre": "Mecánica Avanzada y Física Teórica",
+      "nombre": "Historia y epistemología de la química",
       "regimen": "Anual",
       "formato": "Asignatura",
       "prerrequisitos": {
         "requiresCursada": [
           15,
-          28,
-          29
+          27,
+          {
+            "anyOf": [
+              25,
+              26
+            ]
+          }
         ],
         "requiresAcreditar": []
       }
@@ -585,9 +600,14 @@
           18,
           19,
           20,
-          26,
-          28
-        ],
+          27,
+          {
+            "anyOf": [
+              25,
+              26
+            ]
+          }
+        ],  
         "requiresAcreditar": [
           23,
           24,
