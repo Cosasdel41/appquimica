@@ -39,6 +39,23 @@ function init(){
   renderMatriz();
 }
 
+/* =======================
+   PROMEDIO AUTOMÁTICO
+   ======================= */
+function calcularPromedio(state){
+  const notas = Object.values(state.aprobadas || {})
+    .map(r => Number(r.nota))
+    .filter(n => !Number.isNaN(n));
+
+  if(notas.length === 0) return null;
+  return notas.reduce((a,b)=>a+b,0) / notas.length;
+}
+
+function setupModal(){
+  const dlg = document.getElementById('modal');
+  document.getElementById('modal-close').onclick = ()=> dlg.close();
+}
+
 // Export/Import
 function setupExportImport(){
   const btnExp = document.getElementById('exportar-estado');
@@ -163,14 +180,35 @@ function mostrarBloqueo(m, state){
   document.getElementById('modal').showModal();
 }
 
-// Progreso
+// === Progreso ===
 function renderProgreso(){
-  const state=loadState(); const total=materias.length;
-  const aprobadasIds=Object.keys(state.aprobadas).map(k=>Number(k)).filter(id=>{ const m=materias.find(x=>x.id===id); return m && isAprobada(m,state); });
-  const aprobadas=aprobadasIds.length; const porcentaje=total>0?Math.round((aprobadas/total)*100):0;
-  const topline=document.getElementById('progreso-topline'); if(topline){ const curs=Object.keys(state.cursadas||{}).length; topline.textContent=`Aprobadas: ${aprobadas}/${total} (${porcentaje}%) • Cursadas: ${curs}`; }
-  const fill=document.getElementById('progress-fill'); if(fill){ fill.style.width=porcentaje+'%'; }
-  const nota=document.getElementById('progreso-nota'); if(nota){ let msg=''; if(porcentaje===100) msg='Felicitaciones, podes anotarte en el 108 A'; else if(porcentaje>=75) msg='Podes anotarte en el listado 108 b Item 4'; else if(porcentaje>=50) msg='Podes anotarte en el listado 108 b Item 5'; else if(porcentaje>25) msg='Podes anotarte en el listado de Emergencia'; else msg='Seguí sumando materias para habilitar listados.'; nota.textContent=msg; }
+  const state = loadState();
+  const total = materias.length;
+  const aprobadas = Object.keys(state.aprobadas).filter(id=>{
+    const m = materias.find(x=>x.id===Number(id));
+    return m && isAprobada(m,state);
+  }).length;
+  const porcentaje = total ? Math.round((aprobadas/total)*100) : 0;
+
+  const topline = document.getElementById('progreso-topline');
+  if(topline){
+    const curs = Object.keys(state.cursadas||{}).length;
+    const prom = calcularPromedio(state);
+    const promTxt = prom!==null ? ` • Promedio: ${prom.toFixed(2)}` : '';
+    topline.textContent = `Aprobadas: ${aprobadas}/${total} (${porcentaje}%) • Cursadas: ${curs}${promTxt}`;
+  }
+
+  const fill = document.getElementById('progress-fill');
+  if(fill) fill.style.width = porcentaje+'%';
+
+  const nota = document.getElementById('progreso-nota');
+  if(nota){
+    nota.textContent = porcentaje===100 ? 'Felicitaciones, podes anotarte en el 108 A'
+      : porcentaje>=75 ? 'Podes anotarte en el listado 108 b Item 4'
+      : porcentaje>=50 ? 'Podes anotarte en el listado 108 b Item 5'
+      : porcentaje>25 ? 'Podes anotarte en el listado de Emergencia'
+      : 'Seguí sumando materias para habilitar listados.';
+  }
 }
 
 // Colapsables
